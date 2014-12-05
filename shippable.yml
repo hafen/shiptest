@@ -9,3 +9,5 @@ script:
   - lsb_release -a
   - whoami
   - sudo whoami
+  - export test=a
+  - echo $test
