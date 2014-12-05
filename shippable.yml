@@ -4,6 +4,11 @@ cache: true
 jdk:
   - openjdk7
 
+before_install:
+  - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/dependencies.sh
+  - chmod 755 ./dependencies.sh
+  - ./dependencies.sh
+
 script:
   - cat /proc/meminfo
   - lsb_release -a
