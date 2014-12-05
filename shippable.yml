@@ -1,0 +1,8 @@
+language: java
+cache: true
+
+jdk:
+  - openjdk7
+
+script:
+  - cat /proc/meminfo
