@@ -7,7 +7,7 @@ jdk:
 before_install:
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/dependencies.sh
   - chmod 755 ./dependencies.sh
-  - ./dependencies.sh
+  - # ./dependencies.sh
 
 script:
   - cat /proc/meminfo
@@ -16,4 +16,4 @@ script:
   - sudo whoami
   - export test=a
   - echo $test
-  - maven --version
+  - mvn --version
