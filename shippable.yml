@@ -6,3 +6,6 @@ jdk:
 
 script:
   - cat /proc/meminfo
+  - lsb_release -a
+  - whoami
+  - sudo whoami
