@@ -34,6 +34,9 @@ script:
   - sudo whoami
   - mvn --version
   - pwd
+  - echo $LD_LIBRARY_PATH
+  - cat ~/.bash_profile
+  - cat ~/.bashrc
   - printenv
   - # hadoop fs -ls /user/shippable
   - # hadoop fs -ls /
