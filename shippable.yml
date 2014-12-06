@@ -5,7 +5,7 @@ jdk:
   - openjdk7
 
 before_install:
-  - echo $BUILD_SETUP_DONE
+  - ls -la ~/
   - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B70731143DD9F856
   - export TESSERA_USER=shippable
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/setup.sh
@@ -16,7 +16,7 @@ before_install:
   - # ./hadoop.sh
 
 script:
-  - echo $BUILD_SETUP_DONE
+  - ls -la ~/
   - cat /proc/meminfo
   - lsb_release -a
   - whoami
