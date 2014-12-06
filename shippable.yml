@@ -5,10 +5,9 @@ jdk:
   - openjdk7
 
 before_install:
-  - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/dependencies.sh
-  - chmod 755 ./dependencies.sh
-  - sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B70731143DD9F856
-  - ./dependencies.sh
+  - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/setup.sh
+  - chmod 755 ./setup.sh
+  - ./setup.sh
 
 script:
   - cat /proc/meminfo
@@ -18,3 +17,4 @@ script:
   - export test=a
   - echo $test
   - mvn --version
+  - pwd
