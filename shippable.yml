@@ -29,3 +29,4 @@ script:
   - mvn --version
   - pwd
   - hadoop fs -ls /user/shippable
+  - hadoop fs -ls /
