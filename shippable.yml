@@ -17,6 +17,9 @@ before_install:
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/R.sh
   - chmod 755 ./R.sh
   - ./R.sh
+  - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/tessera.sh
+  - chmod 755 ./tessera.sh
+  - ./tessera.sh
 
 script:
   - # for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
@@ -33,4 +36,4 @@ script:
   - pwd
   - # hadoop fs -ls /user/shippable
   - # hadoop fs -ls /
-  - R --version
+  - R -e "library(Rhipe)"
