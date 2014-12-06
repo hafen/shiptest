@@ -10,7 +10,7 @@ before_install:
   - export TESSERA_USER=shippable
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/setup.sh
   - chmod 755 ./setup.sh
-  - source setup.sh
+  - ./setup.sh
   - # curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/hadoop.sh
   - # chmod 755 ./hadoop.sh
   - # ./hadoop.sh
