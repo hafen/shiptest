@@ -14,12 +14,15 @@ before_install:
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/hadoop.sh
   - chmod 755 ./hadoop.sh
   - ./hadoop.sh
+  - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/R.sh
+  - chmod 755 ./R.sh
+  - ./R.sh
 
 script:
-  - for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
-  - sudo service hadoop-yarn-resourcemanager start
-  - sudo service hadoop-yarn-nodemanager start
-  - sudo service hadoop-mapreduce-historyserver start
+  - # for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
+  - # sudo service hadoop-yarn-resourcemanager start
+  - # sudo service hadoop-yarn-nodemanager start
+  - # sudo service hadoop-mapreduce-historyserver start
   - ls -la ~/
   - cat /proc/meminfo
   - lsb_release -a
@@ -28,5 +31,6 @@ script:
   - sudo whoami
   - mvn --version
   - pwd
-  - hadoop fs -ls /user/shippable
-  - hadoop fs -ls /
+  - # hadoop fs -ls /user/shippable
+  - # hadoop fs -ls /
+  - R --version
