@@ -24,4 +24,4 @@ script:
   - sudo whoami
   - mvn --version
   - pwd
-  - hadoop fs -ls /user/shippable
+  - # hadoop fs -ls /user/shippable
