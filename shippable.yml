@@ -16,6 +16,7 @@ before_install:
   - # ./hadoop.sh
 
 script:
+  - echo 1 > /tmp/a
   - ls -la ~/
   - # cat /proc/meminfo
   - lsb_release -a
