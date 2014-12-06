@@ -12,6 +12,7 @@ before_install:
   - curl -OL https://raw.githubusercontent.com/hafen/install-base/master/cdh5mr2precise/hadoop.sh
   - chmod 755 ./hadoop.sh
   - ./hadoop.sh
+  - hadoop fs -ls
 
 script:
   - cat /proc/meminfo
