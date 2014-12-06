@@ -17,7 +17,7 @@ before_install:
 
 script:
   - ls -la ~/
-  - cat /proc/meminfo
+  - # cat /proc/meminfo
   - lsb_release -a
   - whoami
   - echo $TESSERA_USER
