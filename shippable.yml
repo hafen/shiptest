@@ -34,6 +34,7 @@ script:
   - sudo whoami
   - mvn --version
   - pwd
+  - printenv
   - # hadoop fs -ls /user/shippable
   - # hadoop fs -ls /
   - R -e "library(Rhipe)"
