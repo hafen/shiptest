@@ -41,6 +41,7 @@ script:
   - cat ~/.bash_profile
   - cat ~/.bashrc
   - printenv
+  - sudo chmod -R aou=rwx /usr/local/lib/R/site-library
   - # hadoop fs -ls /user/shippable
   - hadoop fs -ls /
   - # R -e "library(Rhipe)"
