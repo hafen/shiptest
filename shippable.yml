@@ -40,5 +40,6 @@ script:
   - cat ~/.bashrc
   - printenv
   - # hadoop fs -ls /user/shippable
-  - # hadoop fs -ls /
-  - R -e "library(Rhipe)"
+  - hadoop fs -ls /
+  - # R -e "library(Rhipe)"
+  - R -e "library(testthat); library(Rhipe); source(file.path(system.file(package = 'Rhipe'), 'tests/testthat/test-simple-mr.R'))"
