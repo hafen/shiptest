@@ -22,10 +22,10 @@ before_install:
   - ./tessera.sh
 
 script:
-  - # for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
-  - # sudo service hadoop-yarn-resourcemanager start
-  - # sudo service hadoop-yarn-nodemanager start
-  - # sudo service hadoop-mapreduce-historyserver start
+  - for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
+  - sudo service hadoop-yarn-resourcemanager start
+  - sudo service hadoop-yarn-nodemanager start
+  - sudo service hadoop-mapreduce-historyserver start
   - source /etc/profile
   - ls -la ~/
   - cat /proc/meminfo
