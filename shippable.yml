@@ -35,7 +35,6 @@ script:
   - whoami
   - echo $TESSERA_USER
   - sudo whoami
-  - mvn --version
   - pwd
   - echo $LD_LIBRARY_PATH
   - cat ~/.bash_profile
