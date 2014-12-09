@@ -21,7 +21,7 @@ before_install:
   - chmod 755 ./tessera.sh
   - ./tessera.sh
 
-script:
+script: 
   - for x in `cd /etc/init.d ; ls hadoop-hdfs-*` ; do sudo service $x start ; done
   - sudo service hadoop-yarn-resourcemanager start
   - sudo service hadoop-yarn-nodemanager start
