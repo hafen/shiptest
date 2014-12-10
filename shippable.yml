@@ -41,7 +41,7 @@ script:
   - printenv
   - cat /home/shippable/rhRunner.sh
   - sudo chmod -R aou=rwx /usr/local/lib/R/site-library
-  - exec /usr/bin/R CMD /usr/local/lib/R/site-library/Rhipe/bin/RhipeMapReduce --slave --silent --vanilla
+  - # exec /usr/bin/R CMD /usr/local/lib/R/site-library/Rhipe/bin/RhipeMapReduce --slave --silent --vanilla
   - # hadoop fs -ls /user/shippable
   - hadoop fs -ls /
   - # R -e "library(Rhipe)"
