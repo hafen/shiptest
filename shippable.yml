@@ -29,7 +29,6 @@ script:
   - source /etc/profile
   - ls -la ~/
   - ls -la ~/..
-  - ls -la /home
   - cat /proc/meminfo
   - lsb_release -a
   - whoami
